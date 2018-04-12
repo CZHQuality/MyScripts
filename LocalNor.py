@@ -114,8 +114,8 @@ shape = (1,dim,row,col)
 #obj1 = Foo('chengd', 18)
 
 obj1 =  LecunLCN(img, shape, 1e-4, 9, True)
-out = obj1.output
-print(out)
+#out = obj1.output
+#print(out)
 out = obj1.output.eval()[0][0] #This command execute the theano 
 cv2.imshow('original.jpg',img_)
 cv2.imshow('result.jpg',out)
