@@ -12,8 +12,8 @@ for i = 0 : 5
     temp_1 = strcat(input_path, num2str(i), '\');
     temp_2 = strcat(sv_path, num2str(i), '\');
     %  temp_1
-    fpath = temp_1;  %ÕâÀïÊÇÎÄ¼ş¼ĞµÄÃû×Ö
-    img_path_list = dir(strcat(fpath,'*.bmp'));%»ñÈ¡¸ÃÎÄ¼ş¼ĞÖĞËùÓĞbmp¸ñÊ½µÄÍ¼Ïñ  
+    fpath = temp_1;  %è¿™é‡Œæ˜¯æ–‡ä»¶å¤¹çš„åå­—
+    img_path_list = dir(strcat(fpath,'*.bmp'));%è·å–è¯¥æ–‡ä»¶å¤¹ä¸­æ‰€æœ‰bmpæ ¼å¼çš„å›¾åƒ  
     for j = 1 : length(img_path_list)
         img = imread(strcat(temp_1, img_path_list(j).name));
         img = imresize(img, [64, 64]);
